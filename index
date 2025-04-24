@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>L’IA dans l’éducation et la formation en 2025 : Chiffres clés et impacts</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Tailwind CSS 2.2.19 -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://cdn.jsdelivr.net/npm/@fontsource/inter@3.3.1/400.css" rel="stylesheet">
+  <!-- Font Awesome 6.5.2 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
+  <!-- Chart.js 4.4.3 -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+  <style>
+    body {
+      font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+      background-color: #f6f8fa;
+    }
+    .title-gradient {
+      background: linear-gradient(90deg, #5f37fb, #8847ec 90%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .stat-card {
+      background: linear-gradient(120deg, #f9fafe 85%, #e6dbfa 100%);
+      border: 1px solid #dadbf5;
+      border-radius: 1rem;
+      box-shadow: 0 6px 24px 0 rgba(142, 122, 216, 0.07);
+      transition: box-shadow 0.2s;
+    }
+    .stat-card:hover {
+      box-shadow: 0 10px 32px 0 rgba(142,122,216,0.11);
+    }
+    .icon-bg {
+      background: linear-gradient(120deg, #845dec 55%, #b087ff 100%);
+      color: #fff;
+      border-radius: 50%;
+      width: 2.5rem;
+      height: 2.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .source-link {
+      color: #5f37fb;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body class="antialiased text-gray-800">
+
+  <main class="max-w-5xl mx-auto py-10 px-4">
+
+    <!-- Title -->
+    <header class="text-center mb-8">
+      <h1 class="title-gradient text-4xl font-extrabold mb-3">
+        L’IA dans l’éducation et la formation en 2025<br>
+        <span class="text-xl sm:text-2xl block mt-1 font-medium text-gray-700">Chiffres clés et impacts</span>
+      </h1>
+      <p class="max-w-2xl mx-auto text-lg text-gray-600 mt-3">
+        L’intelligence artificielle transforme le paysage éducatif d’une manière sans précédent.<br>Adoption massive, amélioration des résultats, nouveaux défis : découvrez les chiffres vérifiés et leur source, présentés de façon inclusive.
+      </p>
+    </header>
+
+    <!-- Visual summary -->
+    <section class="mb-12 flex flex-col items-center">
+      <canvas id="adoptionChart" width="460" height="300" class="mb-6 bg-white rounded-lg shadow-lg p-4 border border-purple-100"></canvas>
+      <script>
+        window.addEventListener('DOMContentLoaded', function() {
+          const ctx = document.getElementById('adoptionChart').getContext('2d');
+          new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+              labels: ["Étudiant·es utilisant l'IA", "Enseignant·es utilisant l'IA"],
+              datasets: [{
+                data: [92, 50],
+                backgroundColor: [
+                  'rgba(95, 55, 251, .8)',
+                  'rgba(136, 71, 236, .8)'
+                ],
+                borderColor: [
+                  'rgba(95,55,251,1)',
+                  'rgba(136,71,236,1)'
+                ],
+                borderWidth: 2
+              }]
+            },
+            options: {
+              plugins: {
+                legend: {
+                  position: 'bottom',
+                  labels: { font: { size: 15, weight: 'bold', family: "'Inter', Arial" } }
+                },
+                title: {
+                  display: true,
+                  text: "Adoption de l'IA en 2025 (%)",
+                  font: { size: 18, weight: 'bold', family: "'Inter', Arial" },
+                  color: '#8847ec',
+                },
+              }
+            }
+          });
+        });
+      </script>
+    </section>
+
+    <!-- Statistiques clés -->
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
+      <article class="stat-card p-6 flex items-center space-x-5">
+        <div class="icon-bg"><i class="fa-solid fa-user-graduate fa-lg"></i></div>
+        <div>
+          <div class="text-3xl font-bold text-purple-800">92%</div>
+          <div class="text-base font-medium mt-1">des étudiant·es utilisent l’IA</div>
+          <div class="text-xs mt-1 text-gray-500">
+            Source : <a class="source-link" href="https://aristeksystems.com/blog/ai-powered-learning-key-statistics-on-its-growing-impact/" target="_blank">Aristek Systems, 2025</a>
+          </div>
+        </div>
+      </article>
+      <article class="stat-card p-6 flex items-center space-x-5">
+        <div class="icon-bg"><i class="fa-solid fa-book-open-reader fa-lg"></i></div>
+        <div>
+          <div class="text-2xl font-bold text-purple-800">88%</div>
+          <div class="text-base font-medium mt-1">ont utilisé l’IA pour leurs évaluations</div>
+          <div class="text-xs mt-1 text-gray-500">
+            Source : <a class="source-link" href="https://www.forbes.com/sites/chriswestfall/2023/01/28/educators-battle-plagiarism-as-89-of-students-admit-to-using-open-ais-chatgpt-for-homework/" target="_blank">Forbes, 2023 (étude)</a>
+          </div>
+        </div>
+      </article>
+      <article class="stat-card p-6 flex items-center space-x-5">
+        <div class="icon-bg"><i class="fa-solid fa-chalkboard-user fa-lg"></i></div>
+        <div>
+          <div class="text-2xl font-bold text-purple-800">50%</div>
+          <div class="text-base font-medium mt-1">des enseignant·es utilisent l’IA en cours</div>
+          <div class="text-xs mt-1 text-gray-500">
+            Source : <a class="source-link" href="https://aristeksystems.com/blog/ai-powered-learning-key-statistics-on-its-growing-impact/" target="_blank">Aristek Systems, 2025</a>
+          </div>
+        </div>
+      </article>
+      <article class="stat-card p-6 flex items-center space-x-5">
+        <div class="icon-bg"><i class="fa-solid fa-globe-dollar fa-lg"></i></div>
+        <div>
+          <div class="text-2xl font-bold text-purple-800">6 Mrd $</div>
+          <div class="text-base font-medium mt-1">Taille du marché mondial de l’IA en éducation</div>
+          <div class="text-xs mt-1 text-gray-500">
+            Source : <a class="source-link" href="https://vorecol.com/fr/blogs/blog-lutilisation-de-lintelligence-artificielle-pour-ameliorer-lefficacite-des-programmes-de-formation-innovants-145977" target="_blank">Vorecol, 2025</a>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- Impact -->
+    <section class="mb-12">
+      <h2 class="text-2xl md:text-3xl font-bold text-purple-900 mb-6">Impact sur l’enseignement et l’apprentissage</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="stat-card p-5">
+          <div class="flex items-center">
+            <div class="icon-bg mr-3"><i class="fa-solid fa-arrow-trend-up"></i></div>
+            <span class="text-xl font-bold text-purple-800">+62%</span>
+          </div>
+          <div class="font-medium mt-2">d’amélioration des résultats aux examens</div>
+          <div class="text-xs text-gray-500 mt-1">Source : <a class="source-link" href="https://aristeksystems.com/blog/ai-powered-learning-key-statistics-on-its-growing-impact/" target="_blank">Aristek Systems, 2025</a></div>
+        </div>
+        <div class="stat-card p-5">
+          <div class="flex items-center">
+            <div class="icon-bg mr-3"><i class="fa-solid fa-hourglass-end"></i></div>
+            <span class="text-xl font-bold text-purple-800">-90%</span>
+          </div>
+          <div class="font-medium mt-2">de réduction du temps de correction</div>
+          <div class="text-xs text-gray-500 mt-1">Source : <a class="source-link" href="https://aristeksystems.com/blog/ai-powered-learning-key-statistics-on-its-growing-impact/" target="_blank">Aristek Systems, 2025</a></div>
+        </div>
+        <div class="stat-card p-5">
+          <div class="flex items-center">
+            <div class="icon-bg mr-3"><i class="fa-solid fa-graduation-cap"></i></div>
+            <span class="text-xl font-bold text-purple-800">+12%</span>
+          </div>
+          <div class="font-medium mt-2">d’augmentation des taux de diplomation</div>
+          <div class="text-xs text-gray-500 mt-1">Source : <a class="source-link" href="https://aristeksystems.com/blog/ai-powered-learning-key-statistics-on-its-growing-impact/" target="_blank">Aristek Systems, 2025</a></div>
+        </div>
+        <div class="stat-card p-5">
+          <div class="flex items-center">
+            <div class="icon-bg mr-3"><i class="fa-solid fa-users-between-lines"></i></div>
+            <span class="text-xl font-bold text-purple-800">+75%</span>
+          </div>
+          <div class="font-medium mt-2">de temps d’interaction enseignant·e–étudiant·e</div>
+          <div class="text-xs text-gray-500 mt-1">Source : <a class="source-link" href="https://aristeksystems.com/blog/ai-powered-learning-key-statistics-on-its-growing-impact/" target="_blank">Aristek Systems, 2025</a></div>
+        </div>
+        <div class="stat-card p-5">
+          <div class="flex items-center">
+            <div class="icon-bg mr-3"><i class="fa-solid fa-bolt"></i></div>
+            <span class="text-xl font-bold text-purple-800">+19%</span>
+          </div>
+          <div class="font-medium mt-2">d’amélioration de l’efficacité d’apprentissage</div>
+          <div class="text-xs text-gray-500 mt-1">Source : <a class="source-link" href="https://aristeksystems.com/blog/ai-powered-learning-key-statistics-on-its-growing-impact/" target="_blank">Aristek Systems, 2025</a></div>
+        </div>
+        <div class="stat-card p-5">
+          <div class="flex items-center">
+            <div class="icon-bg mr-3"><i class="fa-solid fa-face-laugh-beam"></i></div>
+            <span class="text-xl font-bold text-purple-800">+37%</span>
+          </div>
+          <div class="font-medium mt-2">de satisfaction étudiante accrue</div>
+          <div class="text-xs text-gray-500 mt-1">Source : <a class="source-link" href="https://aristeksystems.com/blog/ai-powered-learning-key-statistics-on-its-growing-impact/" target="_blank">Aristek Systems, 2025</a></div>
+        </div>
+        <div class="stat-card p-5">
+          <div class="flex items-center">
+            <div class="icon-bg mr-3"><i class="fa-solid fa-tasks"></i></div>
+            <span class="text-xl font-bold text-purple-800">+42%</span>
+          </div>
+          <div class="font-medium mt-2">de gain de temps sur les tâches administratives</div>
+          <div class="text-xs text-gray-500 mt-1">Source : <a class="source-link" href="https://aristeksystems.com/blog/ai-powered-learning-key-statistics-on-its-growing-impact/" target="_blank">Aristek Systems, 2025</a></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Défis et tendances -->
+    <section class="mb-12">
+      <h2 class="text-2xl md:text-3xl font-bold text-purple-900 mb-6">Tendances et défis à venir</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="stat-card p-5">
+          <div class="flex items-center">
+            <div class="icon-bg mr-3"><i class="fa-solid fa-chart-line"></i></div>
+            <span class="text-lg font-bold text-purple-800">20 Mrd $ d’ici 2027</span>
+          </div>
+          <div class="font-medium mt-2">Projection du marché de l’IA en éducation (<a class="source-link" href="https://www.statista.com/statistics/1112968/worldwide-artificial-intelligence-edtech-market-size/" target="_blank">Statista, 2024</a>)</div>
+        </div>
+        <div class="stat-card p-5">
+          <div class="flex items-center">
+            <div class="icon-bg mr-3"><i class="fa-solid fa-exclamation-circle"></i></div>
+            <span class="text-lg font-bold text-purple-800">70%</span>
+          </div>
+          <div class="font-medium mt-2">des enseignant·es considèrent l’IA dans les devoirs comme du plagiat</div>
+          <div class="text-xs text-gray-500 mt-1">Source : <a class="source-link" href="https://neurosciencenews.com/chatgt-student-writing-23821/" target="_blank">Neuroscience News, 2023</a>
+          </div>
+        </div>
+        <div class="stat-card p-5">
+          <div class="flex items-center">
+            <div class="icon-bg mr-3"><i class="fa-solid fa-house-laptop"></i></div>
+            <span class="text-lg font-bold text-purple-800">80–90%</span>
+          </div>
+          <div class="font-medium mt-2">des universités souhaitent introduire des assistants IA à l’horizon 2030</div>
+          <div class="text-xs text-gray-500 mt-1">Source : <a class="source-link" href="https://www.forbes.com/sites/rayravaglia/2024/12/28/innovators-see-ai-in-education-unlocking-digital-promise-in-2025/" target="_blank">Forbes, 2025</a>
+          </div>
+        </div>
+        <div class="stat-card p-5">
+          <div class="flex items-center">
+            <div class="icon-bg mr-3"><i class="fa-solid fa-triangle-exclamation"></i></div>
+            <span class="text-lg font-bold text-purple-800">51%</span>
+          </div>
+          <div class="font-medium mt-2">des enseignant·es estiment la sécurité des données insuffisante</div>
+          <div class="text-xs text-gray-500 mt-1">Source : <a class="source-link" href="https://aristeksystems.com/blog/ai-powered-learning-key-statistics-on-its-growing-impact/" target="_blank">Aristek Systems, 2025</a></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Note de synthèse -->
+    <section class="py-8 rounded-lg bg-gradient-to-r from-purple-50 to-pink-50 border mt-10">
+      <div class="max-w-3xl mx-auto">
+        <h3 class="text-xl md:text-2xl font-bold text-purple-800 mb-3">Pour aller plus loin</h3>
+        <ul class="list-disc pl-5 text-base text-gray-700 mb-4">
+          <li>Une adoption rapide et massive de l’IA par les étudiant·es et les enseignant·es.</li>
+          <li>Des impacts mesurables sur les résultats, la personnalisation des apprentissages, l’évaluation automatisée et la satisfaction globale.</li>
+          <li>Des enjeux de sécurité, d'éthique, de plagiat, et de formation du personnel enseignement doivent impérativement être pris en compte.</li>
+        </ul>
+        <p class="text-sm text-gray-600 mt-2">
+          Cette infographie a été réalisée à partir de données issues de sources publiques vérifiées (voir liens), à l’aide d’outils d’IA. <br>
+          <strong>Licence Creative Commons BY SA — Rochane Kherbouche.</strong>
+        </p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
