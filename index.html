@@ -13,19 +13,65 @@
   <!-- Chart.js -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
   <style>
+    /* Palette extraite de la charte graphique */
+    :root {
+      --c-01: #87750e;
+      --c-02: #7c3487;
+      --c-03: #246a2e;
+      --c-04: #0a7160;
+      --c-05: #e1f0fc;
+      --c-06: #900b0d;
+      --c-07: #3f2880;
+      --c-08: #9a4f16;
+      --c-09: #16345f;
+      --c-10: #ffffff;
+      --c-11: #edcb0c;
+      --c-12: #90509a;
+      --c-13: #4eae33;
+      --c-14: #47b7a4;
+      --c-15: #1c5ea9;
+      --c-16: #e03134;
+      --c-17: #524797;
+      --c-18: #f5810c;
+      --c-19: #f3e17b;
+      --c-20: #dfb5e5;
+      --c-21: #9fdc9b;
+      --c-22: #b9e9dc;
+      --c-23: #4286c6;
+      --c-24: #f296ab;
+      --c-25: #bcadd5;
+      --c-26: #f9cea2;
+      --c-27: #faf7e1;
+      --c-28: #f5e1f7;
+      --c-29: #def5d8;
+      --c-30: #e5f7f4;
+      --c-31: #9bc5eb;
+      --c-32: #f9dcdf;
+      --c-33: #eae4fa;
+      --c-34: #f7e9da;
+      --c-35: #851f5c;
+      --c-36: #b82b80;
+      --c-37: #ecbce7;
+      --c-38: #fae3f7;
+      --c-39: #96254f;
+      --c-40: #f14382;
+      --c-41: #f7a0c0;
+      --c-42: #f3d8e2;
+    }
+
     body {
       font-family: 'Inter', sans-serif;
-      background: linear-gradient(120deg, #4338ca 0%, #818cf8 100%);
+      background: linear-gradient(120deg, var(--c-15) 0%, var(--c-23) 100%);
       color: #202133;
       min-height: 100vh;
     }
     .infobox {
-      background: rgba(255,255,255,0.94);
+      background: rgba(250,247,225,0.94);
       border-radius: 1.25rem;
       box-shadow: 0 10px 32px 0 rgba(80,70,220,0.13);
     }
     a {
-      color: #5f39ea;
+      color: var(--c-07);
       text-decoration: underline;
     }
     .section-title {
@@ -48,12 +94,12 @@
     <!-- Header -->
     <header class="flex flex-col items-center justify-center text-center mb-10">
       <h1 class="text-4xl font-bold text-white mb-2 drop-shadow section-title">L'IA dans l'éducation et la formation en 2025</h1>
-      <p class="text-xl text-indigo-100 mb-4">Chiffres clés, impacts & sources vérifiées</p>
+      <p class="text-xl mb-4" style="color:var(--c-05)">Chiffres clés, impacts & sources vérifiées</p>
     </header>
 
     <!-- Adoption de l'IA en 2025 -->
     <section class="infobox mb-8 p-6">
-      <h2 class="text-2xl font-bold mb-3 text-indigo-800 flex items-center"><i class="fas fa-graduation-cap mr-2 text-indigo-500"></i>Adoption de l’IA en 2025</h2>
+      <h2 class="text-2xl font-bold mb-3 flex items-center" style="color:var(--c-07)"><i class="fas fa-graduation-cap mr-2" style="color:var(--c-15)"></i>Adoption de l’IA en 2025</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
 
         <div>
@@ -92,7 +138,7 @@
 
     <!-- Impacts sur l'enseignement et l'apprentissage -->
     <section class="infobox mb-8 p-6">
-      <h2 class="text-2xl font-bold mb-3 text-indigo-800 flex items-center"><i class="fas fa-chalkboard-teacher mr-2 text-purple-500"></i>Impacts sur l’enseignement et l’apprentissage</h2>
+      <h2 class="text-2xl font-bold mb-3 flex items-center" style="color:var(--c-07)"><i class="fas fa-chalkboard-teacher mr-2" style="color:var(--c-36)"></i>Impacts sur l’enseignement et l’apprentissage</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
           <ul class="space-y-3 text-lg">
@@ -115,7 +161,7 @@
               </span>
             </li>
             <li>
-              <span class="text-red-700 font-semibold">À noter :</span> Les chiffres sur "+62 % d’amélioration des résultats aux examens", "-90 % de réduction du temps de correction", "+12 % de taux de diplomation" ou "+75 % de temps d’interaction" n’ont pas été confirmés par des sources fiables et sont donc retirés pour cette version.
+              <span class="font-semibold" style="color:#e03134">À noter :</span> Les chiffres sur "+62 % d’amélioration des résultats aux examens", "-90 % de réduction du temps de correction", "+12 % de taux de diplomation" ou "+75 % de temps d’interaction" n’ont pas été confirmés par des sources fiables et sont donc retirés pour cette version.
             </li>
           </ul>
         </div>
@@ -127,7 +173,7 @@
 
     <!-- Tendances et défis à venir -->
     <section class="infobox mb-8 p-6">
-      <h2 class="text-2xl font-bold mb-3 text-indigo-800 flex items-center"><i class="fas fa-chart-line mr-2 text-indigo-400"></i>Tendances et défis à venir</h2>
+      <h2 class="text-2xl font-bold mb-3 flex items-center" style="color:var(--c-07)"><i class="fas fa-chart-line mr-2" style="color:var(--c-23)"></i>Tendances et défis à venir</h2>
       <div class="space-y-3 text-lg">
         <ul class="space-y-2">
           <li>
@@ -158,8 +204,8 @@
 
     <!-- Mention Creative Commons et IA -->
     <footer class="infobox my-10 p-6 text-center flex flex-col items-center">
-      <div class="text-indigo-900 font-medium mb-2">
-        <i class="fas fa-robot mr-2 text-violet-500"></i>
+      <div class="font-medium mb-2" style="color:var(--c-09)">
+        <i class="fas fa-robot mr-2" style="color:var(--c-37)"></i>
         Cette infographie a été produite à l’aide d’un outil d’intelligence artificielle, à partir de sources publiques vérifiées.<br>
         Elle est diffusée sous licence <span class="font-semibold">Creative Commons BY-SA</span>.
       </div>
@@ -179,9 +225,9 @@
         datasets: [{
           data: [86, 89, 60],
           backgroundColor: [
-            '#818cf8',
-            '#a5b4fc',
-            '#c7d2fe'
+            '#9fdc9b',
+            '#f296ab',
+            '#4eae33'
           ],
           borderWidth: 0
         }]
@@ -209,9 +255,9 @@
           label: '% Amélioration/Bénéfice',
           data: [17, 42, 18],
           backgroundColor: [
-            '#6366f1',
-            '#818cf8',
-            '#a5b4fc'
+            '#47b7a4',
+            '#f5810c',
+            '#524797'
           ],
           borderRadius: 10,
           maxBarThickness: 50
